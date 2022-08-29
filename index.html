@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Random Gradient Generator</title>
+</head>
+<body>
+    <div>
+        <h1>Click the button to get a random gradient</h1>
+        <select name="gradientDirection" id="gradientDirection" style="background: transparent; border: 0px">
+            <option value="horizontal">Horizontal</option>
+            <option value="vertical">Vertical</option>
+        </select>
+    </div>
+    <div class="buttonWrapper">
+        <h2>background: linear-gradient(to <span id="direction">right</span>, <span id="color1">#ffffff</span>, <span id="color2">#ffffff</span>);</h2>
+        <div style="display:flex; justify-content:center">
+            <button onclick="getGradient()">Get Gradient</button>    
+        </div>
+    </div>
+</body>
+</html>
